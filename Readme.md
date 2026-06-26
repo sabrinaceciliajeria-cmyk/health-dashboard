@@ -6,7 +6,8 @@
 
 ## 📸 Vista previa
 
-![Dashboard Preview](docs/images/dashboard-v1.png)
+<img width="691" height="477" alt="dashboard-v1 png" src="https://github.com/user-attachments/assets/63d0db5d-435d-4d3e-a70d-efd3ce7f4223" />
+
 
 ---
 
