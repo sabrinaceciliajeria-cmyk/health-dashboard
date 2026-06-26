@@ -1,0 +1,130 @@
+/* ================================
+   🎨 DESIGN SYSTEM
+   ================================ */
+
+:root {
+  --bg: #f5f7fa;
+  --card: #ffffff;
+  --primary: #2563eb;
+  --success: #22c55e;
+  --danger: #ef4444;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --radius: 12px;
+}
+
+/* ================================
+   🌍 BASE
+   ================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: system-ui, Arial, sans-serif;
+  background-color: #f5f7fa;
+  color: #1f2937;
+}
+
+
+
+/* ================================
+   🧱 LAYOUT
+   ================================ */
+
+.dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ================================
+   🏥 HEADER
+   ================================ */
+
+.header {
+  background: var(--card);
+  padding: 20px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+/* ================================
+   📊 CARDS
+   ================================ */
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.card {
+  background: var(--card);
+  padding: 20px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+/* ================================
+   📈 CHART
+   ================================ */
+
+.chart {
+  background: var(--card);
+  padding: 20px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.placeholder {
+  height: 200px;
+  margin-top: 10px;
+  background: #eef2ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius);
+  color: var(--muted);
+}
+
+/* ================================
+   📋 TABLE
+   ================================ */
+
+.patients {
+  background: var(--card);
+  padding: 20px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+th {
+  text-align: left;
+  padding: 12px;
+  color: var(--muted);
+  border-bottom: 1px solid #e5e7eb;
+}
+
+td {
+  padding: 12px;
+  border-bottom: 1px solid #f1f5f9;
+}

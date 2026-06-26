@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Configuración básica del documento -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Título que aparece en la pestaña del navegador -->
+  <title>Health Dashboard</title>
+</head>
+
+<body>
+
+  <!-- CONTENEDOR PRINCIPAL DEL DASHBOARD -->
+  <main class="dashboard">
+
+    <!-- ================= HEADER ================= -->
+    <!-- Encabezado principal del sistema -->
+    <header class="header">
+      <h1>🩺 Health Dashboard</h1>
+      <p>Patient Monitoring System</p>
+    </header>
+
+    <!-- ================= STATS CARDS ================= -->
+    <!-- Sección de métricas principales del sistema -->
+    <section class="stats">
+
+      <!-- Card: Total de pacientes -->
+      <article class="card">
+        <h3>Total Patients</h3>
+        <span>48</span>
+      </article>
+
+      <!-- Card: pacientes en estado crítico -->
+      <article class="card">
+        <h3>Critical Patients</h3>
+        <span>5</span>
+      </article>
+
+      <!-- Card: pacientes estables -->
+      <article class="card">
+        <h3>Stable Patients</h3>
+        <span>43</span>
+      </article>
+
+      <!-- Card: promedio de frecuencia cardíaca -->
+      <article class="card">
+        <h3>Average Heart Rate</h3>
+        <span>82 bpm</span>
+      </article>
+
+    </section>
+
+    <!-- ================= GRÁFICO ================= -->
+    <!-- Aquí se mostrará el gráfico de signos vitales (futuro) -->
+    <section class="chart">
+
+      <h2>Vital Signs Chart</h2>
+
+      <!-- Placeholder temporal mientras no hay librería de gráficos -->
+      <div class="placeholder">
+        Chart Coming Soon
+      </div>
+
+    </section>
+
+    <!-- ================= TABLA DE PACIENTES ================= -->
+    <!-- Listado principal de pacientes -->
+    <section class="patients">
+
+      <h2>Patient Table</h2>
+
+      <table>
+
+        <!-- Encabezados de la tabla -->
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Heart Rate</th>
+            <th>Blood Pressure</th>
+            <th>Glucose</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+
+        <!-- Datos simulados de pacientes -->
+        <tbody>
+
+          <!-- Paciente 1 -->
+          <tr>
+            <td>Juan Pérez</td>
+            <td>45</td>
+            <td>82</td>
+            <td>120/80</td>
+            <td>95</td>
+            <td>🟢 Stable</td>
+          </tr>
+
+          <!-- Paciente 2 -->
+          <tr>
+            <td>María González</td>
+            <td>61</td>
+            <td>110</td>
+            <td>150/90</td>
+            <td>180</td>
+            <td>🔴 Critical</td>
+          </tr>
+
+          <!-- Paciente 3 -->
+          <tr>
+            <td>Carlos Soto</td>
+            <td>53</td>
+            <td>79</td>
+            <td>118/76</td>
+            <td>102</td>
+            <td>🟢 Stable</td>
+          </tr>
+
+        </tbody>
+
+      </table>
+
+    </section>
+
+  </main>
+
+  <script type="module" src="/src/main.js"></script>
+
+</body>
+
+</html>
